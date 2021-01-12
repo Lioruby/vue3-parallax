@@ -1,11 +1,13 @@
 <template>
-  <slot class="caca">
-  </slot>
+  <div ref="scrollYParallax">
+    <slot>
+    </slot>
+  </div>
 </template>
 
 <script>
   export default {
-    name: 'VueParallax',
+    name: 'ScrollYParallax',
     props: {
       width: {
         type: String,
@@ -21,18 +23,22 @@
         required: false
       }
     },
+    data() {
+      return {
+        el: null
+      }
+    },
     methods: {
       loadSpeedItem() {
-        const el = document.getElementById(this.itemId);
+        this.el = this.$refs.scrollYParallax;
 
         window.addEventListener('scroll', () => {
-          el.style.transform = `translateY(${window.pageYOffset * this.speed}px)`;
+          this.el.style.transform = `translateY(${window.pageYOffset * this.speed}px)`;
         });
       }
     },
     mounted() {
       this.loadSpeedItem();
-      console.log(this.$slots);
     }
   };
 </script>
