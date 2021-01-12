@@ -1,13 +1,13 @@
 <template>
-  <vue-parallax :speed="0.25" item-id="ici">
+  <vue-parallax :speed="0.25" item-id="1th">
     <img
       class="img__background"
       :src="src1"
-      id="ici"
+      id="1th"
     />
   </vue-parallax>
-  <vue-parallax :speed="0.09" item-id="caca">
-    <h1 class="img__title" id="caca">
+  <vue-parallax :speed="0.09" item-id="2nd">
+    <h1 class="img__title" id="2nd">
       DISCOVER
     </h1>
   </vue-parallax>
@@ -32,6 +32,7 @@ export default {
   body {
     margin: 0;
     padding: 0;
+    font-family: Helvetica;
   }
   .img__background {
     width: 100%;
