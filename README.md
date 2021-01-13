@@ -43,9 +43,9 @@ export default {
 
 ## Usage
 ```vue
-<scroll-y-parallax>
+<scroll-parallax>
   <YourComponent/>
-</scroll-y-parallax>
+</scroll-parallax>
 ```
 
 Props | Type | Value | Default
