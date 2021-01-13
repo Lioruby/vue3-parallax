@@ -9,18 +9,10 @@
   export default {
     name: 'ScrollYParallax',
     props: {
-      width: {
-        type: String,
-        required: false
-      },
       speed: {
         type: Number,
         required: true,
         default: 0
-      },
-      itemId: {
-        type: String,
-        required: false
       }
     },
     data() {
