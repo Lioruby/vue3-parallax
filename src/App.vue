@@ -1,12 +1,12 @@
 <template>
   <section>
-    <scroll-y-parallax :speed="0.35">
+    <scroll-parallax :speed="0.35">
       <img
         class="img__background"
         :src="src1"
       />
-    </scroll-y-parallax>
-    <scroll-y-parallax
+    </scroll-parallax>
+    <scroll-parallax
       :speed="0.2"
     >
     <div class="img__title" style="display: flex; justify-content: flex-end; align-item: center;">
@@ -17,33 +17,57 @@
           {{ scrollY }}
       </code>
     </div>
-    </scroll-y-parallax>
+    </scroll-parallax>
   </section>
   <div class="spacing"></div>
-  <section>
-    <scroll-y-parallax>
-      <img
-        class="img__background"
-        style="position: fixed; will-change: transform;"
-        :src="src3"
-      />
-    </scroll-y-parallax>
+  <section class="horizontal__content">
+    <scroll-parallax :speed="0.25" :left="true" direction="x">
+      <div style="display: flex; justify-content: flex-start;">
+        <img
+          class="img__background"
+          :src="src3"
+        />
+        <img
+          class="img__background"
+          :src="src1"
+        />
+      </div>
+    </scroll-parallax>
+    <div class="horizontal__elements">
+      <scroll-parallax
+        :speed="0.15"
+        direction="x"
+
+      >
+      <div style="display: flex; align-item: center;">
+        <div class="img__title">
+          <img :src="src2" alt="">
+        </div>
+        <div class="img__title" style="">
+          <code>
+              {{ scrollX }}
+          </code>
+        </div>
+      </div>
+      </scroll-parallax>
+    </div>
   </section>
 </template>
 
 <script>
-import ScrollYParallax from './components/ScrollYParallax.vue';
+import ScrollParallax from './components/ScrollParallax.vue';
 
 export default {
   components: {
-    ScrollYParallax
+    ScrollParallax
   },
   data() {
     return {
       src1: "https://images.unsplash.com/photo-1527685609591-44b0aef2400b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1791&q=80",
       src2: "https://images.unsplash.com/photo-1545062990-4a95e8e4b96d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80",
       src3: "https://images.unsplash.com/photo-1590880449155-b54f958ce314?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1430&q=80",
-      scrollY: "<scroll-y-parallax></scroll-y-parallax>"
+      scrollY: '<scroll-parallax direction="y"></scroll-parallax>',
+      scrollX: '<scroll-parallax :left="true" direction="x"></scroll-parallax>'
     }
   }
 };
@@ -74,7 +98,7 @@ export default {
   }
 
   .spacing {
-    height: 150px;
+    height: 250px;
   }
 
   code {
@@ -88,6 +112,9 @@ export default {
     font-size: 16px;
   }
 
+  .horizontal__content {
+    overflow: hidden;
+  }
 </style>
 
 
