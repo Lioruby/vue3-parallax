@@ -68,10 +68,11 @@
         }
         else if (this.direction === 'y'){
           this.axes = 'Y' ;
-          if (this.up) {
-            this.speedCoeff = this.speed;
-          } else {
+          if (this.down) {
             this.speedCoeff = -this.speed;
+          }
+          else {
+            this.speedCoeff = this.speed;
           }
         }
       }
