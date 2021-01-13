@@ -13,4 +13,8 @@ You can see the demo here : https://lioruby.github.io/vue3-parallax/
 Props | Type | Value | Default
 ----- | -----| ----- | -------
 speed | Number | below 0.6 | 0.15
-down | Boolean | | false 
+direction | String | x/y | y
+up | Boolean | / | true
+down | Boolean | / | false
+left | Boolean | / | false
+right | Boolean | / | true
