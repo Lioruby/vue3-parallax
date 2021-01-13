@@ -24,6 +24,8 @@ import ScrollParallax from 'vue3-parallax/src/components/ScrollParallax.vue';
 
 const app = createApp(App);
 app.component('scroll-parallax', ScrollParallax);
+
+// ...
 ```
 
 To use it just as component:
@@ -41,9 +43,9 @@ export default {
 
 ## Usage
 ```vue
-<scroll-y-parallax>
+<scroll-parallax>
   <YourComponent/>
-</scroll-y-parallax>
+</scroll-parallax>
 ```
 
 Props | Type | Value | Default
