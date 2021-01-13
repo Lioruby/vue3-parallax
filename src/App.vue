@@ -24,6 +24,7 @@
     <scroll-y-parallax>
       <img
         class="img__background"
+        style="position: fixed; will-change: transform;"
         :src="src3"
       />
     </scroll-y-parallax>
