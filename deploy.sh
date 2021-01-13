@@ -12,8 +12,8 @@ cd dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy to github pages'
 
-git push -f git@github.com:lioruby/vue-task-counter.git master:gh-pages
+git push -f git@github.com:lioruby/vue3-parallax.git master:gh-pages
 
 cd -
