@@ -14,7 +14,7 @@ Props | Type | Value | Default
 ----- | -----| ----- | -------
 speed | Number | below 0.6 | 0.15
 direction | String | x/y | y
-up | Boolean | / | true
-down | Boolean | / | false
-left | Boolean | / | false
-right | Boolean | / | true
+up | Boolean | | true
+down | Boolean | | false
+left | Boolean | | false
+right | Boolean | | true
