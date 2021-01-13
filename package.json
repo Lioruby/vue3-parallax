@@ -1,7 +1,11 @@
 {
   "name": "vue3-parallax",
-  "version": "0.1.0",
-  "private": true,
+  "homepage": "https://lioruby.github.io/vue3-parallax/",
+  "bugs": "https://github.com/Lioruby/vue3-parallax/issues",
+  "version": "0.1.2",
+  "description": "Vue.js 3 plugin for simple parallax.",
+  "author": "Lior Levy <levy.lior.pro@gmail.com>",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -38,5 +42,10 @@
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "keywords": [
+    "beautiful",
+    "useful",
+    "stuff"
   ]
 }
