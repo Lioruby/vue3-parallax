@@ -1,28 +1,31 @@
 <template>
-  <scroll-y-parallax :speed="0.35">
-    <img
-      class="img__background"
-      :src="src1"
-    />
-  </scroll-y-parallax>
-  <scroll-y-parallax
-    :speed="0.2"
-  >
-  <div class="img__title" style="display: flex; justify-content: flex-end; align-item: center;">
-    <img :src="src2" alt="">
-  </div>
-  <div class="img__title">
-    <code>
-        {{ scrollY }}
-    </code>
-  </div>
-  </scroll-y-parallax>
-
-  <div>
-    <scroll-y-parallax>
-      <img :src="scr1" alt="">
+  <section>
+    <scroll-y-parallax :speed="0.35">
+      <img
+        class="img__background"
+        :src="src1"
+      />
     </scroll-y-parallax>
-  </div>
+    <scroll-y-parallax
+      :speed="0.2"
+    >
+    <div class="img__title" style="display: flex; justify-content: flex-end; align-item: center;">
+      <img :src="src2" alt="">
+    </div>
+    <div class="img__title">
+      <code>
+          {{ scrollY }}
+      </code>
+    </div>
+    </scroll-y-parallax>
+    <div class="spacing"></div>
+    <div class="" style="">
+      <scroll-y-parallax :speed="0.05">
+        <img :src="scr3" style="width: 100%;"  alt="">
+      </scroll-y-parallax>
+    </div>
+  </section>
+  <div class="spacing"></div>
 </template>
 
 <script>
@@ -36,6 +39,7 @@ export default {
     return {
       src1: "https://images.unsplash.com/photo-1527685609591-44b0aef2400b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1791&q=80",
       src2: "https://images.unsplash.com/photo-1545062990-4a95e8e4b96d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80",
+      scr3: "https://images.unsplash.com/photo-1590880449155-b54f958ce314?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1430&q=80",
       scrollY: "<scroll-y-parallax></scroll-y-parallax>"
     }
   }
@@ -67,7 +71,7 @@ export default {
   }
 
   .spacing {
-    height: 350px;
+    height: 150px;
   }
 
   code {
