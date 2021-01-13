@@ -26,7 +26,7 @@
       }
     },
     methods: {
-      loadSpeedItem() {
+      loadParallax() {
         this.el = this.$refs.scrollYParallax;
         const speedCoeff = this.down ? this.speed : -this.speed
         window.addEventListener('scroll', () => {
@@ -35,7 +35,7 @@
       }
     },
     mounted() {
-      this.loadSpeedItem();
+      this.loadParallax();
     }
   };
 </script>
