@@ -12,5 +12,5 @@ You can see the demo here : https://lioruby.github.io/vue3-parallax/
 
 Props | Type | Value | Default
 ----- | -----| ----- | -------
-speed | Number | between 0-1 | 0.15
+speed | Number | below 0.6 | 0.15
 down | Boolean | | false 
