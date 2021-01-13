@@ -3,7 +3,16 @@ A simple Vue.js 3 parallax component.
 
 You can see the demo here : https://lioruby.github.io/vue3-parallax/
 
-### Usage
+## Get Started
+
+```sh
+yarn add vue3-parallax
+```
+```sh
+npm i vue3-parallax
+```
+
+## Usage
 ```vue
 <scroll-y-parallax>
   <YourComponent/>
