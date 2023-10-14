@@ -1,3 +1,7 @@
+### ⚠️ This component is not kept up to date ⚠️
+
+Last I heard, it still works, but any new pull requests would be welcome. Thank you in advance.
+
 ## vue3-parallax
 A simple Vue.js 3 parallax component.
 
